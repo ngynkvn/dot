@@ -1,5 +1,12 @@
+""Me
+set tags=./tags;
+set showcmd
+"" remap Ctrl+P to paste from system clipboard.
+noremap <C-p> "*p 
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Maintainer: 
@@ -384,6 +391,3 @@ function! VisualSelection(direction, extra_filter) range
     let @/ = l:pattern
     let @" = l:saved_reg
 endfunction
-
-""Me
-set tags=./tags;
